@@ -15,6 +15,9 @@ import { HomeComponent } from './home/home.component';
 import { MovieDbService } from './movie-db.service';
 import { FilmDetailsComponent } from './film-details/film-details.component';
 import { SeriesDetailsComponent } from './series-details/series-details.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+
 
 @NgModule({
   declarations: [
@@ -26,13 +29,15 @@ import { SeriesDetailsComponent } from './series-details/series-details.componen
     NotFoundComponent,
     HomeComponent,
     FilmDetailsComponent,
-    SeriesDetailsComponent
+    SeriesDetailsComponent,
+    
   ],
   imports: [
     BrowserModule,
-    NgbModule,
+    NgbModule.forRoot(),
     AppRoutingModule,
     HttpClientModule,
+    FormsModule, ReactiveFormsModule,
   ],
   providers: [
     MovieDbService,
