@@ -5,37 +5,44 @@ import { AppComponent } from '../app.component';
 import { FilmListComponent } from '../film-list/film-list.component';
 import { FilmDetailsComponent } from "../film-details/film-details.component";
 import { SeriesListComponent } from '../series-list/series-list.component';
+import { SeriesDetailsComponent } from '../series-details/series-details.component';
 import { AboutUsComponent } from '../about-us/about-us.component';
 import { NotFoundComponent } from '../not-found/not-found.component';
 import { HomeComponent } from '../home/home.component';
-const routes: Routes = [ {
-        path: '',
-        component: HomeComponent,
-    }, {
-        path: 'FilmList',
-        component: FilmListComponent,
-    }, {
-        path: 'films/:id',
-        component: FilmDetailsComponent,
-    },
-    {
-        path: 'SeriesList',
-        component: SeriesListComponent,
-    }, {
-        path: 'AboutUs',
-        component: AboutUsComponent,
-    },
-    { path: '**', component: NotFoundComponent },
+
+const routes: Routes = [{
+    path: '',
+    component: HomeComponent,
+}, {
+    path: 'FilmList',
+    component: FilmListComponent,
+}, {
+    path: 'films/:id',
+    component: FilmDetailsComponent,
+},
+{
+    path: 'SeriesList',
+    component: SeriesListComponent,
+},
+{
+    path: 'Series/:id',
+    component: SeriesDetailsComponent,
+},
+{
+    path: 'AboutUs',
+    component: AboutUsComponent,
+},
+{ path: '**', component: NotFoundComponent },
 ];
 
-@NgModule( {
+@NgModule({
     imports: [
         CommonModule,
-        RouterModule.forRoot( routes )
+        RouterModule.forRoot(routes)
     ],
     exports: [
         RouterModule
     ],
     declarations: []
-} )
-export class AppRoutingModule {}
+})
+export class AppRoutingModule { }

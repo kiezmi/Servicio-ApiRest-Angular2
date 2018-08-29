@@ -36,7 +36,7 @@ import { SeriesDetailsComponent } from './series-details/series-details.componen
   ],
   providers: [
     MovieDbService,
-        ],
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
