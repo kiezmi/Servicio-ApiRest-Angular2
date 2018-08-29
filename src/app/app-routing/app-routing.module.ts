@@ -25,7 +25,7 @@ const routes: Routes = [{
     component: SeriesListComponent,
 },
 {
-    path: 'Series/:id',
+    path: 'series/:id',
     component: SeriesDetailsComponent,
 },
 {
