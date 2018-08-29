@@ -14,6 +14,7 @@ import { HomeComponent } from './home/home.component';
 
 import { MovieDbService } from './movie-db.service';
 import { FilmDetailsComponent } from './film-details/film-details.component';
+import { SeriesDetailsComponent } from './series-details/series-details.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FilmDetailsComponent } from './film-details/film-details.component';
     AboutUsComponent,
     NotFoundComponent,
     HomeComponent,
-    FilmDetailsComponent
+    FilmDetailsComponent,
+    SeriesDetailsComponent
   ],
   imports: [
     BrowserModule,
