@@ -12,10 +12,11 @@
     </div>
     <div class="col-8">
       <h4>Título original:</h4>{{serie.original_name}}
+      <hr>
       <h4>Descripción:</h4>{{serie.overview}}
+      <hr>
       <h4>Valoracion:</h4>
       <ngb-rating [(rate)]="serie.vote_average" [readonly]="true"></ngb-rating>
-      <hr>
       <p>Rate: <b>{{serie.vote_average}}</b></p>
     </div>
   </div>
