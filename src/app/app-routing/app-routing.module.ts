@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { AppComponent } from '../app.component';
 import { FilmListComponent } from '../film-list/film-list.component';
 import { FilmDetailsComponent } from "../film-details/film-details.component";
 import { SeriesListComponent } from '../series-list/series-list.component';
