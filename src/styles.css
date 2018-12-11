@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  background-image: url('/assets/1357aac284e5a21.jpg');
+}
+
+.titulo{
+  font-size: 35pt;
+  text-align: center;
+}
+a {
+  align-self: center;
+}
+/*-----------------------------------Cards--------------------------------------------*/
+
+.card-body{
+  min-height: 200px;
+  margin-top: 20px;
+}
+
+.card-title {
+  font-size: 25pt;
+}
+.card-text {
+  font-size: 15pt;
+  max-height: 25em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
