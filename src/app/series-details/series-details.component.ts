@@ -18,9 +18,9 @@ export class SeriesDetailsComponent implements OnInit {
     this.getSerie();
   }
   getSerie(): void {
-    console.log(this.route)
+    //console.log(this.route)
     const id = +this.route.snapshot.params.id;
-    console.log(id);
+    //console.log(id);
     this.movieService.getSerie(id)
       .subscribe(serie => {
         this.serie = serie;
