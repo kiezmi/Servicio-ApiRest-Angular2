@@ -1,14 +1,14 @@
-<h1>{{titulo}}</h1>
-
+<h1 class="titulo">{{titulo}}</h1>
 <div class="container-fluid">
   <div class="row">
-    <div *ngFor="let serie of series" class="col-sm-4">
+    <div *ngFor="let serie of series" class="col-sm-3">
       <div class="card center" style="width: 18rem;">
-        <img class="card-img-top" src="https://image.tmdb.org/t/p/w500{{serie.poster_path}}" alt="Card image cap">
+        <img class="card-img-top" src="https://image.tmdb.org/t/p/w500{{serie.poster_path}}" alt="Card image cap"
+          routerLink="/series/{{serie.id}}">
         <div class="card-body">
           <h5 class="card-title">{{serie.title}}</h5>
           <p class="card-text">{{serie.overview}}</p>
-          <a href="#" class="btn btn-primary" routerLink="/series/{{serie.id}}">Ver</a>
+          <a href="#" class="btn btn-primary" routerLink="/series/{{serie.id}}">Más</a>
         </div>
       </div>
     </div>

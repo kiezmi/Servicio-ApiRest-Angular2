@@ -1,16 +1,17 @@
-<h1>{{titulo}}</h1>
-
+<h1 class="titulo">{{titulo}}</h1>
+<div></div>
 <div class="container-fluid">
   <div class="row">
-  <div *ngFor="let film of films" class="col-sm-4">
-    <div class="card center" style="width: 18rem;">
-      <img class="card-img-top" src="https://image.tmdb.org/t/p/w500{{film.poster_path}}" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">{{film.title}}</h5>
-        <p class="card-text">{{film.overview}}</p>
-        <a href="#" class="btn btn-primary"  routerLink="/films/{{film.id}}">Ver</a>
+    <div *ngFor="let film of films" class="col-sm-3">
+      <div class="card center" style="width: 18em;">
+        <img class="card-img-top" src="https://image.tmdb.org/t/p/w500{{film.poster_path}}" alt="Card image cap"
+          routerLink="/films/{{film.id}}">
+        <div class="card-body">
+          <h5 class="card-title">{{film.title}}</h5>
+          <p class="card-text">{{film.overview}}</p>
+          <a href="#" class="btn btn-primary" routerLink="/films/{{film.id}}">Más</a>
+        </div>
       </div>
     </div>
   </div>
-</div>
 </div>
