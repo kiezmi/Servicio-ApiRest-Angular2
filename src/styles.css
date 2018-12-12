@@ -1,28 +1,44 @@
 body {
-  background-image: url('/assets/1357aac284e5a21.jpg');
+  /* background: url('/assets/sociedades-pantalla.jpg')no-repeat center center fixed; */
+  background-size: cover;
+ background: -webkit-gradient(linear, left top, left bottom, from(#cbccc8), to(#4ABCAD)) fixed;
 }
 
-.titulo{
+.titulo {
   font-size: 35pt;
   text-align: center;
+  
 }
+
 a {
   align-self: center;
 }
+
 /*-----------------------------------Cards--------------------------------------------*/
 
-.card-body{
+.card-body {
   min-height: 200px;
   margin-top: 20px;
 }
 
 .card-title {
   font-size: 25pt;
+  text-align: center;
 }
+
 .card-text {
   font-size: 15pt;
-  max-height: 25em;
+  max-height: 20em;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+
+.somos {
+  padding-top: 10vh;
+  
+}
+
+.targeta{
+  background-color: rgb(192, 252, 242);
 }
