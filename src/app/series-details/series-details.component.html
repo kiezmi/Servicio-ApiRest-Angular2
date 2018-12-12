@@ -1,25 +1,24 @@
 <div class="container">
-
-  <div class="row ">
-    <div class="col-12 text-center">
-      <h1>{{serie.name}}</h1>
-    </div>
-
-  </div>
   <div class="row">
-    <div class="col-4">
-      <img src="https://image.tmdb.org/t/p/w300{{serie.poster_path}}">
-    </div>
-    <div class="col-8">
-      <h4>Título original:</h4>{{serie.original_name}}
-      <hr>
-      <h4>Descripción:</h4>{{serie.overview}}
-      <hr>
-      <h4>Valoracion:</h4>
-      <ngb-rating [(rate)]="serie.vote_average" [readonly]="true"></ngb-rating>
-      <p>Rate: <b>{{serie.vote_average}}</b></p>
-      <a href="#" class="btn btn-primary" routerLink="/SeriesList/">Atras</a>
+    <div class="col-12 text-center">
+      <h1 class="titulo">{{serie.name}}</h1>
     </div>
   </div>
-
+  <div class="targeta">
+    <div class="row">
+      <div class="col-4">
+        <img src="https://image.tmdb.org/t/p/w300{{serie.poster_path}}">
+      </div>
+      <div class="col-8">
+        <h4>Título original:</h4>{{serie.original_name}}
+        <hr>
+        <h4>Descripción:</h4>{{serie.overview}}
+        <hr>
+        <h4>Valoracion:</h4>
+        <ngb-rating [(rate)]="serie.vote_average" [readonly]="true"></ngb-rating>
+        <p>Rate: <b>{{serie.vote_average}}</b></p>
+        <a href="#" class="btn btn-primary" routerLink="/SeriesList/">Atras</a>
+      </div>
+    </div>
+  </div>
 </div>

@@ -1,23 +1,24 @@
 <div class="container">
   <div class="row ">
     <div class="col-12 text-center">
-      <h1>{{film.title}}</h1>
+      <h1 class="titulo">{{film.title}}</h1>
     </div>
   </div>
-  <div class="row">
-    <div class="col-4">
-      <img src="https://image.tmdb.org/t/p/w300{{film.poster_path}}">
-    </div>
-    <div class="col-8">
-      <h4>Título original:</h4>{{film.original_title}}
-      <hr>
-      <h4>Descripción:</h4>{{film.overview}}
-      <hr>
-      <h4>Valoracion:</h4>
-      <ngb-rating [(rate)]="film.vote_average" [readonly]="true"></ngb-rating>
-      <p>Rate: <b>{{film.vote_average}}</b></p>
-      <a href="#" class="btn btn-primary" routerLink="/FilmList/">Atras</a>
+  <div class="targeta">
+    <div class="row">
+      <div class="col-4">
+        <img src="https://image.tmdb.org/t/p/w300{{film.poster_path}}">
+      </div>
+      <div class="col-8">
+        <h4>Título original:</h4>{{film.original_title}}
+        <hr>
+        <h4>Descripción:</h4>{{film.overview}}
+        <hr>
+        <h4>Valoracion:</h4>
+        <ngb-rating [(rate)]="film.vote_average" [readonly]="true"></ngb-rating>
+        <p>Rate: <b>{{film.vote_average}}</b></p>
+        <a href="#" class="btn btn-primary" routerLink="/FilmList/">Atras</a>
+      </div>
     </div>
   </div>
-
 </div>
